@@ -1,19 +1,21 @@
 /* Configuração global */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f0f2f5; /* Tom de cinza mais leve */
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .container {
-    max-width: 900px;
-    width: 90%;
+    max-width: 800px;
+    width: 100%;
     margin: 20px;
-    padding: 30px 40px;
+    padding: 30px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -28,132 +30,36 @@ header {
 }
 
 header h1 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #1f2937;
+    font-size: 2.5rem;
+    color: #2c3e50;
     margin: 0;
 }
 
 header h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    color: #4b5563;
+    color: #555;
     margin-top: 5px;
 }
 
-/* Títulos de Seção Padrão */
-section h3, footer h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #111827;
-    border-bottom: 2px solid #007BFF; /* Destaque azul */
+/* Seções */
+section h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 section p {
     font-size: 1rem;
-    text-align: left;
-    margin-bottom: 10px;
+    text-align: justify;
 }
 
-/* Habilidades */
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.skill-categoria {
-    flex: 1;
-    min-width: 200px;
-    background-color: #f9fafb;
-    padding: 15px;
-    border-radius: 6px;
-    border: 1px solid #e5e7eb;
-}
-
-.skill-categoria h4 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #374151;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.skill-categoria ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-.skill-categoria li {
-    font-size: 0.95rem;
-    color: #4b5563;
-    margin-bottom: 5px;
-}
-
-.soft-skills-lista {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-.soft-skills-lista li {
-    margin-bottom: 5px;
-}
-
-/* Projetos */
-.projeto-item {
-    background-color: #f9fafb;
-    padding: 20px;
-    border-radius: 6px;
-    border: 1px solid #e5e7eb;
-    margin-bottom: 20px;
-}
-
-.projeto-item h4 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #1f2937;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.projeto-item p {
-    margin-bottom: 10px;
-}
-
-.projeto-item a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: 700;
-    font-size: 0.95rem;
-}
-
-.projeto-item a:hover {
-    text-decoration: underline;
-}
-
-/* Formação */
-.formacao h4 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.formacao p {
-    margin: 0;
-}
-
-/* Contato (Footer) */
+/* Contato */
 .contato ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
 .contato li {
@@ -164,7 +70,7 @@ section p {
 .contato a {
     text-decoration: none;
     color: #007BFF;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .contato a:hover {
