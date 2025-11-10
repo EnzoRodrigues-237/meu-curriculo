@@ -1,78 +1,235 @@
-/* Configuração global */
+/* =================================== */
+/* CONFIG GERAL            */
+/* =================================== */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f2f5; /* Cinza claro no fundo */
     color: #333;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     padding: 20px;
 }
 
-.container {
-    max-width: 800px;
-    width: 100%;
-    margin: 20px;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 700;
 }
 
-/* Cabeçalho */
-header {
-    text-align: center;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    color: #2c3e50;
+ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
-header h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #555;
-    margin-top: 5px;
+a {
+    text-decoration: none;
 }
 
-/* Seções */
-section h3 {
-    font-size: 1.4rem;
-    color: #2c3e50;
-    border-bottom: 1px solid #ccc;
+/* =================================== */
+/* LAYOUT PRINCIPAL          */
+/* =================================== */
+.resume-wrapper {
+    display: grid;
+    /* Define as 2 colunas: a 1ª (sidebar) tem 1 parte, a 2ª (main) tem 2.5 partes */
+    grid-template-columns: 1fr 2.5fr;
+    width: 100%;
+    max-width: 1100px; /* Largura máxima do currículo */
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    overflow: hidden; /* Garante que os cantos arredondados funcionem */
+}
+
+/* =================================== */
+/* SIDEBAR (ESQUERDA)        */
+/* =================================== */
+.sidebar {
+    background-color: #1f2937; /* Azul-escuro/Grafite */
+    color: #e5e7eb; /* Cor do texto (cinza claro) */
+    padding: 40px;
+}
+
+.sidebar h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #00aaff; /* Destaque azul claro */
+    margin-top: 5px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #4b5563; /* Divisor */
+}
+
+.sidebar h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    border-bottom: 2px solid #00aaff;
     padding-bottom: 5px;
+    margin-top: 30px;
     margin-bottom: 15px;
 }
 
-section p {
-    font-size: 1rem;
-    text-align: justify;
-}
-
-/* Contato */
-.contato ul {
-    list-style: none;
-    padding: 0;
-}
-
+/* Contato com ícones */
 .contato li {
-    font-size: 1rem;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
 }
 
-.contato a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
+.contato i {
+    width: 25px; /* Alinha os ícones */
+    font-size: 1.1rem;
+    color: #00aaff;
+    margin-right: 10px;
+}
+
+.contato a, .contato span {
+    color: #e5e7eb;
+    word-break: break-all; /* Quebra e-mails longos */
 }
 
 .contato a:hover {
     text-decoration: underline;
+    color: #ffffff;
+}
+
+/* Skills da Sidebar */
+.habilidades .skill-categoria {
+    margin-bottom: 15px;
+}
+.habilidades h4, .soft-skills h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+.habilidades li, .soft-skills li, .idiomas p {
+    font-size: 0.95rem;
+    color: #e5e7eb;
+    margin-bottom: 5px;
+}
+.soft-skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* =================================== */
+/* CONTEÚDO (DIREITA)           */
+/* =================================== */
+.main-content {
+    padding: 40px;
+}
+
+.main-content h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1f2937;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 10px;
+}
+
+/* Seção de Projetos (com Efeito Hover) */
+.projeto-item {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease; /* Efeito de transição suave */
+}
+
+.projeto-item:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    transform: translateY(-5px); /* Efeito de "levantar" */
+}
+
+.projeto-item h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.projeto-item p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+.projeto-item p strong {
+    color: #374151;
+}
+
+.projeto-item .repo-link {
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+.projeto-item .repo-link a {
+    color: #007BFF;
+    font-weight: 700;
+}
+.projeto-item .repo-link a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de Formação */
+.formacao-item h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 5px;
+}
+.formacao-item p {
+    margin-bottom: 5px;
+}
+.formacao-item .disciplinas {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* =================================== */
+/* DESIGN RESPONSIVO          */
+/* =================================== */
+@media (max-width: 850px) {
+    .resume-wrapper {
+        /* Muda para 1 coluna em telas pequenas */
+        grid-template-columns: 1fr;
+    }
+    
+    body {
+        padding: 0;
+    }
+
+    .resume-wrapper {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .sidebar {
+        padding: 30px;
+    }
+
+    .main-content {
+        padding: 30px;
+    }
+
+    .sidebar h1 { font-size: 1.8rem; }
+    .sidebar h2 { font-size: 1.1rem; }
+    .main-content h3 { font-size: 1.4rem; }
 }
