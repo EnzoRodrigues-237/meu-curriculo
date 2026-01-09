@@ -1,235 +1,196 @@
-/* =================================== */
-/* CONFIG GERAL            */
-/* =================================== */
+/* ===============================
+   RESET & BASE
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f0f2f5; /* Cinza claro no fundo */
-    color: #333;
+    background-color: #0f172a; /* azul bem escuro */
+    color: #e5e7eb;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-weight: 700;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* =================================== */
-/* LAYOUT PRINCIPAL          */
-/* =================================== */
+/* ===============================
+   CONTAINER PRINCIPAL
+================================ */
 .resume-wrapper {
-    display: grid;
-    /* Define as 2 colunas: a 1ª (sidebar) tem 1 parte, a 2ª (main) tem 2.5 partes */
-    grid-template-columns: 1fr 2.5fr;
+    max-width: 1100px;
     width: 100%;
-    max-width: 1100px; /* Largura máxima do currículo */
-    margin: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    overflow: hidden; /* Garante que os cantos arredondados funcionem */
+    background-color: #020617;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
 }
 
-/* =================================== */
-/* SIDEBAR (ESQUERDA)        */
-/* =================================== */
+/* ===============================
+   SIDEBAR
+================================ */
 .sidebar {
-    background-color: #1f2937; /* Azul-escuro/Grafite */
-    color: #e5e7eb; /* Cor do texto (cinza claro) */
-    padding: 40px;
+    background: linear-gradient(180deg, #020617, #020617);
+    padding: 40px 30px;
+    border-right: 1px solid #1e293b;
 }
 
 .sidebar h1 {
-    font-size: 2.2rem;
-    color: #ffffff;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #f8fafc;
 }
 
 .sidebar h2 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #00aaff; /* Destaque azul claro */
-    margin-top: 5px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #4b5563; /* Divisor */
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #38bdf8;
+    margin-top: 6px;
+    margin-bottom: 28px;
 }
 
 .sidebar h3 {
-    font-size: 1.3rem;
-    color: #ffffff;
-    border-bottom: 2px solid #00aaff;
-    padding-bottom: 5px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 14px;
 }
 
-/* Contato com ícones */
-.contato li {
+/* ===============================
+   CONTATO
+================================ */
+.contato ul li {
     display: flex;
     align-items: center;
+    gap: 10px;
     margin-bottom: 12px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .contato i {
-    width: 25px; /* Alinha os ícones */
-    font-size: 1.1rem;
-    color: #00aaff;
-    margin-right: 10px;
+    color: #38bdf8;
+    font-size: 0.95rem;
 }
 
-.contato a, .contato span {
+.contato a {
     color: #e5e7eb;
-    word-break: break-all; /* Quebra e-mails longos */
+    text-decoration: none;
 }
 
 .contato a:hover {
-    text-decoration: underline;
-    color: #ffffff;
+    color: #38bdf8;
 }
 
-/* Skills da Sidebar */
-.habilidades .skill-categoria {
-    margin-bottom: 15px;
-}
-.habilidades h4, .soft-skills h4 {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #ffffff;
-    margin-bottom: 8px;
-}
-.habilidades li, .soft-skills li, .idiomas p {
-    font-size: 0.95rem;
-    color: #e5e7eb;
-    margin-bottom: 5px;
-}
-.soft-skills ul {
-    list-style-type: disc;
-    padding-left: 20px;
+/* ===============================
+   SKILLS
+================================ */
+.habilidades ul {
+    margin-bottom: 24px;
 }
 
-/* =================================== */
-/* CONTEÚDO (DIREITA)           */
-/* =================================== */
+.habilidades li {
+    font-size: 0.9rem;
+    color: #cbd5f5;
+    margin-bottom: 6px;
+}
+
+/* ===============================
+   IDIOMAS
+================================ */
+.idiomas p {
+    font-size: 0.9rem;
+    color: #cbd5f5;
+}
+
+/* ===============================
+   CONTEÚDO PRINCIPAL
+================================ */
 .main-content {
-    padding: 40px;
+    padding: 50px 50px;
+    background-color: #020617;
 }
 
 .main-content h3 {
-    font-size: 1.6rem;
+    font-size: 1.35rem;
     font-weight: 700;
-    color: #1f2937;
-    border-bottom: 2px solid #00aaff;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
+    color: #f8fafc;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.main-content h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #38bdf8;
+    margin-top: 6px;
 }
 
 .main-content p {
     font-size: 1rem;
-    color: #4b5563;
-    margin-bottom: 10px;
+    color: #cbd5f5;
+    margin-bottom: 20px;
 }
 
-/* Seção de Projetos (com Efeito Hover) */
+/* ===============================
+   PROJETOS
+================================ */
 .projeto-item {
-    background-color: #f9fafb;
-    border: 1px solid #e5e7eb;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease; /* Efeito de transição suave */
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin-bottom: 18px;
+    background-color: #020617;
+    transition: border 0.3s ease, transform 0.3s ease;
 }
 
 .projeto-item:hover {
-    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
-    transform: translateY(-5px); /* Efeito de "levantar" */
+    border-color: #38bdf8;
+    transform: translateY(-3px);
 }
 
 .projeto-item h4 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #007BFF;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #38bdf8;
+    margin-bottom: 8px;
 }
 
 .projeto-item p {
     font-size: 0.95rem;
-    margin-bottom: 8px;
-}
-.projeto-item p strong {
-    color: #374151;
+    color: #cbd5f5;
+    margin-bottom: 6px;
 }
 
-.projeto-item .repo-link {
-    margin-top: 10px;
+/* ===============================
+   FORMAÇÃO
+================================ */
+.formacao p {
     font-size: 0.95rem;
-}
-.projeto-item .repo-link a {
-    color: #007BFF;
-    font-weight: 700;
-}
-.projeto-item .repo-link a:hover {
-    text-decoration: underline;
+    color: #cbd5f5;
 }
 
-/* Seção de Formação */
-.formacao-item h4 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #1f2937;
-    margin-bottom: 5px;
-}
-.formacao-item p {
-    margin-bottom: 5px;
-}
-.formacao-item .disciplinas {
-    font-size: 0.9rem;
-    font-style: italic;
-    color: #555;
-    margin-top: 10px;
-}
-
-/* =================================== */
-/* DESIGN RESPONSIVO          */
-/* =================================== */
-@media (max-width: 850px) {
+/* ===============================
+   RESPONSIVO
+================================ */
+@media (max-width: 900px) {
     .resume-wrapper {
-        /* Muda para 1 coluna em telas pequenas */
         grid-template-columns: 1fr;
-    }
-    
-    body {
-        padding: 0;
-    }
-
-    .resume-wrapper {
-        margin: 0;
-        border-radius: 0;
     }
 
     .sidebar {
-        padding: 30px;
+        border-right: none;
+        border-bottom: 1px solid #1e293b;
     }
 
     .main-content {
-        padding: 30px;
+        padding: 35px 30px;
     }
-
-    .sidebar h1 { font-size: 1.8rem; }
-    .sidebar h2 { font-size: 1.1rem; }
-    .main-content h3 { font-size: 1.4rem; }
 }
