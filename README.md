@@ -2,12 +2,12 @@
 
 Este repositório contém meu currículo online, desenvolvido com HTML e CSS e publicado com GitHub Pages.
 
-A proposta do projeto é apresentar meu perfil profissional de forma clara, responsiva e objetiva, reunindo informações sobre formação acadêmica, competências técnicas, projetos e contatos.
+A proposta do projeto é apresentar meu perfil profissional de forma objetiva, organizada e responsiva, reunindo informações sobre formação acadêmica, competências técnicas, projetos e contatos.
 
-## Estrutura
+## Estrutura do projeto
 
 - `index.html`: estrutura da página
-- `style.css`: estilização e responsividade
+- `style.css`: estilização visual e responsividade
 - `README.md`: documentação do projeto
 
 ## Tecnologias utilizadas
@@ -17,27 +17,27 @@ A proposta do projeto é apresentar meu perfil profissional de forma clara, resp
 - Google Fonts
 - Font Awesome
 
-## Objetivo do projeto
+## Objetivo
 
-Criar uma página de currículo com visual limpo e apresentação profissional, servindo como apoio para candidaturas e como parte da construção do meu portfólio.
+Criar uma página de currículo com identidade visual moderna, navegação simples e apresentação profissional, servindo como apoio em candidaturas e como parte do meu portfólio pessoal.
 
-## Conteúdo da página
+## Conteúdo apresentado
 
-A página apresenta:
+A página inclui:
 
-- resumo profissional
+- objetivo profissional
 - competências técnicas
 - formação acadêmica
-- projeto em destaque
+- projetos relevantes
 - contatos profissionais
 
-## Projeto destacado
+## Projeto em destaque
 
-### NovaRaid
+### NovaRaid — Plataforma de Gestão de E-Sports
 
-Projeto de plataforma para gerenciamento de campeonatos e eventos de e-sports, com arquitetura separada entre front-end e back-end.
+Projeto em desenvolvimento com arquitetura separada entre front-end e back-end, voltado ao gerenciamento de campeonatos e eventos de e-sports.
 
-Tecnologias utilizadas no projeto:
+Tecnologias principais:
 
 - React
 - FastAPI
@@ -45,7 +45,7 @@ Tecnologias utilizadas no projeto:
 
 ## Publicação
 
-O currículo foi publicado com GitHub Pages para facilitar o acesso e o compartilhamento por link.
+O projeto foi publicado com GitHub Pages para facilitar acesso e compartilhamento.
 
 ## Execução local
 
