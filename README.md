@@ -1,79 +1,56 @@
-# meu-curriculo
-Meu primeiro currículo feito com HTML e CSS publicado e hospedado no GitHub.
+# Currículo Online
 
-# Bot de Automação para WhatsApp
+Este repositório contém meu currículo online desenvolvido com HTML e CSS e publicado via GitHub Pages.
 
-Bot desenvolvido em **Node.js** para automatizar o envio e a leitura de mensagens no WhatsApp, utilizado em um contexto real de empresa do setor de transportes.
+A proposta do projeto é apresentar meu perfil profissional de forma objetiva, responsiva e visualmente organizada, reunindo informações sobre formação, competências técnicas, projetos e contatos.
 
-O objetivo do projeto foi **otimizar a comunicação com clientes**, reduzir o tempo de resposta e padronizar notificações recorrentes.
+## Objetivo
 
----
+Criar uma página de currículo acessível pela web, com estrutura clara e aparência profissional, servindo tanto como apresentação pessoal quanto como peça de portfólio.
 
-## 🎯 Problema
+## Estrutura do Projeto
 
-A empresa realizava comunicações repetitivas com clientes de forma manual, o que gerava:
-- Alto tempo de resposta
-- Falta de padronização nas mensagens
-- Sobrecarga operacional no atendimento
+- `index.html`: estrutura da página
+- `style.css`: estilização e responsividade
+- `README.md`: documentação do projeto
 
----
+## Tecnologias Utilizadas
 
-## 💡 Solução
+- HTML5
+- CSS3
+- Google Fonts
+- Font Awesome
 
-Desenvolvimento de um **bot de automação para WhatsApp**, responsável por:
-- Enviar mensagens automáticas
-- Ler mensagens recebidas
-- Executar fluxos simples de resposta
-- Tratar erros e quedas de sessão
+## Conteúdo Apresentado
 
----
+A página foi organizada para destacar:
 
-## ⚙️ Tecnologias Utilizadas
+- objetivo profissional
+- competências técnicas
+- formação acadêmica
+- projetos relevantes
+- links de contato profissional
 
-- **Node.js**
-- **whatsapp-web.js**
-- JavaScript
-- Git & GitHub
+## Projetos em Destaque no Currículo
 
----
+Entre os projetos apresentados na página, estão:
 
-## 🧠 Minhas Responsabilidades
+### Bot de Automação para WhatsApp
 
-- Desenvolvimento completo da lógica do bot
-- Integração com a biblioteca `whatsapp-web.js`
-- Implementação de envio e leitura de mensagens
-- Tratamento de erros e reconexão
-- Testes em ambiente real de uso
+Projeto desenvolvido em Node.js para automatização de mensagens em um contexto empresarial, com foco em padronização da comunicação e redução de tarefas repetitivas.
 
----
+### NovaRaid
 
-## 🚀 Resultados
+Projeto de plataforma para gerenciamento de e-sports, com arquitetura separada entre front-end e back-end, utilizando React, FastAPI e PostgreSQL.
 
-- Redução do tempo de resposta ao cliente
-- Comunicação mais consistente e padronizada
-- Diminuição de tarefas manuais repetitivas
+## Publicação
 
----
+Este currículo foi hospedado com GitHub Pages para permitir acesso rápido e compartilhamento por link.
 
-## 📌 Observações Técnicas
+## Execução Local
 
-- O bot utiliza autenticação via QR Code
-- A aplicação foi desenvolvida para uso controlado, respeitando limitações da plataforma
-- Projeto focado em automação simples e confiável, sem uso de soluções pagas
-
----
-
-## ▶️ Como Executar o Projeto
+Para visualizar o projeto localmente:
 
 ```bash
-# Clone o repositório
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
-
-# Acesse a pasta do projeto
-cd nome-do-repositorio
-
-# Instale as dependências
-npm install
-
-# Execute o bot
-node index.js
+git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
+cd SEU-REPOSITORIO
