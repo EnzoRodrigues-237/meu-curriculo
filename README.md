@@ -7,7 +7,7 @@ O objetivo do projeto é apresentar meu perfil profissional de forma clara, orga
 ## 🚀 Acesso
 
 Você pode visualizar o currículo diretamente pelo GitHub Pages:
-[https://SEU-USUARIO.github.io/SEU-REPOSITORIO](https://SEU-USUARIO.github.io/SEU-REPOSITORIO)
+[Currículo GitHub - Enzo Rodrigues de Oliveira Silva](https://enzorodrigues-237.github.io/meu-curriculo/)
 
 ## 📁 Estrutura do projeto
 
