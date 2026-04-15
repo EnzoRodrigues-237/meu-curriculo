@@ -52,9 +52,3 @@ Projeto em desenvolvimento com arquitetura separada entre front-end e back-end, 
 - React
 - FastAPI
 - PostgreSQL
-
-## ▶️ Execução local
-
-```bash
-git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
-cd SEU-REPOSITORIO
